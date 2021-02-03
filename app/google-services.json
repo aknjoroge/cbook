@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045895467039",
+    "project_id": "cbook-e7015",
+    "storage_bucket": "cbook-e7015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045895467039:android:ad095ae94a034c4432052a",
+        "android_client_info": {
+          "package_name": "com.example.cbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045895467039-t8ubcb4g8hppk649rh4paqkucui0540j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cbook",
+            "certificate_hash": "fa2e5d20e75089231e1d1d07326e4f65e4bd10b0"
+          }
+        },
+        {
+          "client_id": "1045895467039-82re30uaqat2a9q4ejglslpvmmcifbv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoD2l3B6FMyVeehcwlpFLcETYYYFd77KI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045895467039-82re30uaqat2a9q4ejglslpvmmcifbv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/loginemail"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/custominput"
+                android:drawableStart="@drawable/customemail"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/loginpass"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+
+                android:background="@drawable/custominput"
+                android:drawableStart="@drawable/customlock"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:id="@+id/signuptxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signup?" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="20dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <Button
+                    android:id="@+id/tohomebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="LOGIN"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/purewhite"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
