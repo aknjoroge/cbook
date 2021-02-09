@@ -50,7 +50,7 @@ public class recets extends AppCompatActivity {
 
 
     }
-    public void oncartclick(){
+    public void oncartclick(final String key){
 
         android.app.AlertDialog dialog = new AlertDialog.Builder(this,R.style.AlertDialogStyle)
                 .setTitle("Opptions")
@@ -58,7 +58,7 @@ public class recets extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        fStore.collection("receits").document("rc").collection(userid).document(rckey)
+                        fStore.collection("receits").document("rc").collection(userid).document(key)
                                 .delete()
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -105,7 +105,7 @@ public class recets extends AppCompatActivity {
 
                     @Override
                     public void onClick(View v) {
-                        oncartclick();
+                        oncartclick(model.getKey());
                     }
                 });
             }
